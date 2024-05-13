@@ -99,13 +99,15 @@ export const HeroImage = () => {
           <path pathLength="1" d="M538 777L538 128"></path>
         </svg>
 
-        <img
+        <video
           className={classNames(
             "relative z-10 transition-opacity delay-[680ms]",
             inView ? "opacity-100" : "opacity-0"
           )}
+          autoPlay
+          muted
+          loop
           src="/img/hero.webm"
-          alt="Hero image"
         />
       </div>
     </div>
